@@ -1,4 +1,4 @@
-# Bank Marketing Prediction 🏦
+# Bank Marketing Prediction 
 
 I built this project to predict whether a customer will subscribe to a term deposit, using the UCI Bank Marketing dataset (`bank-full.csv`).
 
@@ -7,9 +7,7 @@ I built this project to predict whether a customer will subscribe to a term depo
 The dataset comes from a bank's phone marketing campaign. My goal was to figure out who is actually likely to say **yes** to a term deposit — so that future campaigns can focus on the right people instead of cold-calling everyone.
 
 ## My Approach
-
 The first thing I noticed was the class imbalance — about 88% of customers said "no" and only ~12% said "yes". I kept that in mind throughout the whole process.
-
 I also made a deliberate decision to drop the `duration` column early on. It tells you how long the call lasted, but you only know that *after* the call ends — so it's useless for making predictions beforehand. Keeping it would've inflated my results artificially.
 
 **What I did to clean the data:**
