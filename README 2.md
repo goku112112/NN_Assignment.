@@ -1,14 +1,14 @@
-# Bank Marketing Prediction 🏦
+# Bank Marketing Prediction 
 
 Predicting whether a customer will subscribe to a term deposit based on the UCI Bank Marketing dataset (`bank-full.csv`).
 
----
+
 
 ## What's the goal?
 
 The bank ran a phone marketing campaign and we want to predict who actually says **yes** to a term deposit — so future campaigns can be more targeted.
 
----
+
 
 ## Approach
 
@@ -20,15 +20,11 @@ The dataset is pretty imbalanced (~88% "no", ~12% "yes"), so we kept that in min
 - Clipped outliers in `balance`, `campaign`, and `previous`
 - One-hot encoded all categorical features
 
----
-
 ## Models Used
 
 **Logistic Regression** — simple baseline, trained with imputed data.
 
 **Random Forest (200 trees)** — the main model. Handles mixed feature types well and gives feature importances out of the box.
-
----
 
 ## Findings
 
@@ -47,14 +43,11 @@ Random Forest clearly wins, and the ROC-AUC of ~0.93 means it's quite good at ra
 
 > If someone said yes before, they're very likely to say yes again. Not surprising, but good to confirm.
 
----
 
 ## Files
 
 - `logistic_model.pkl` — saved logistic regression model
 - Main notebook contains full pipeline from raw CSV to evaluation
-
----
 
 ## Notes
 
